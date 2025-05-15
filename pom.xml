@@ -94,7 +94,7 @@
         <dependency>
             <groupId>org.omnifaces.arquillian</groupId>
             <artifactId>arquillian-glassfish-server-managed</artifactId>
-            <version>1.7</version>
+            <version>1.8</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -143,6 +143,8 @@
                 <configuration>
                     <systemPropertyVariables>
                         <glassfish.home>${glassfish.home}</glassfish.home>
+                        <arquillian.xml>${project.basedir}/arquillian.xml</arquillian.xml>
+                        <glassfish.addDeployName>false</glassfish.addDeployName>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
